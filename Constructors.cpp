@@ -58,7 +58,7 @@ int main()
 
     // Animals cow;    Since we defined two comstructors but not default constructor so this statement shows eror
     //Also if we define a constructor then compiler will not create a default constructor 
-    //A coompiler always define a constructor if we don't define it explicitly
+    //A compiler always define a constructor if we don't define it explicitly
 
     dog.qualities();
     cat.qualities();
