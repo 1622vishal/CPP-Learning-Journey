@@ -47,7 +47,9 @@ int main()
 
     /*We can use copy constructors even if the user defines a function for assigning values*/
     CC num2(num1);     //copy constructor called and copied the values of num1 to num2
+    CC num3 = num1;    // Same as above line 
     num1.show();
     num2.show();
+    num3.show();
     return 0;
 }
