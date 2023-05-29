@@ -1,7 +1,7 @@
 /*----Written by :- Vishal Yadav----*/
 /*----Date :- 29-05-23----*/
 
-/*Program to demonstrate operator overloading using class function*/
+/*Program to demonstrate operator overloading using friend function*/
 /*Opearator overloading is nothing but giving special meaning to an existing operator in C++ without
 changing its original meaning.*/
 
@@ -27,11 +27,11 @@ class Fraction
         denominator=deno;
     }
     /*Special function to give special meaning to some operator*/
-    Fraction operator +(Fraction& f2)
+    friend Fraction operator +(Fraction& f1, Fraction& f2)
     {
         Fraction f3;
-        f3.numerator=numerator*f2.denominator+f2.numerator*denominator;
-        f3.denominator=denominator*f2.denominator;
+        f3.numerator=f1.numerator*f2.denominator+f2.numerator*f1.denominator;
+        f3.denominator=f1.denominator*f2.denominator;
         return f3;
     }
 
@@ -47,8 +47,8 @@ int main()
     f1.print();
     Fraction f2(4,7);
     f2.print();
-    Fraction f3;
-    f3=f1+f2;     //For user defined types such as classes we have to overload operator i.e., define it
+    Fraction f3=f1+f2;
+    //For user defined types such as classes we have to overload operator i.e., define it
     //This is something like f3=f1.operator+(f2)  i.e., works like function call
     f3.print();
     /*We can do this because it is defined for builtin data types*/
