@@ -27,11 +27,12 @@ class Fraction
         denominator=deno;
     }
     /*Special function to give special meaning to some operator*/
-    void operator +(Fraction& f2)
+    Fraction operator +(Fraction& f2)
     {
         Fraction f3;
-        numerator=numerator*f2.denominator+f2.numerator*denominator;
-        denominator=denominator*f2.denominator;
+        f3.numerator=numerator*f2.denominator+f2.numerator*denominator;
+        f3.denominator=denominator*f2.denominator;
+        return f3;
     }
 
     void print()
@@ -47,9 +48,9 @@ int main()
     Fraction f2(4,7);
     f2.print();
     Fraction f3;
-    f1+f2;     //For user defined types such as classes we have to overload operator i.e., define it
+    f3=f1+f2;     //For user defined types such as classes we have to overload operator i.e., define it
     //This is something like f3=f1.operator+(f2)  i.e., works like function call
-    f1.print();
+    f3.print();
     /*We can do this because it is defined for builtin data types*/
     int x=4,y=6;
     int z=x+y;
