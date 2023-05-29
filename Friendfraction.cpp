@@ -1,6 +1,8 @@
 /*----Written by :- Vishal Yadav----*/
 /*----Date :- 22-05-23----*/
 
+/*Program to add two fractions using Friend function*/
+
 #include<iostream>
 using namespace std;
 
