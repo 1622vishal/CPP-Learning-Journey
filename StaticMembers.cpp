@@ -64,7 +64,7 @@ int main()
     s3.initialize();
     s3.print();
 
-    Students :: printsr();   //This is how we call member functions
+    Students :: printsr();   //This is how we call static member functions
 
     return 0;
 }

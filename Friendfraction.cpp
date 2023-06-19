@@ -46,6 +46,9 @@ void Fraction :: printdata()
 void addfraction(const Fraction &f1, const Fraction &f2)
 {
     Fraction f3;
+    
+    /*This is wrong because f1.numerator has some value and we are assigning it some value through calculations*/
+    //f1.numerator=(f1.numerator*f2.denominator) + (f2.numerator*f1.denominator);
     f3.numerator=(f1.numerator*f2.denominator) + (f2.numerator*f1.denominator);
     f3.denominator =f1.denominator*f2.denominator;
 
