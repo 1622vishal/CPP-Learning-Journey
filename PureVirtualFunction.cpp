@@ -6,6 +6,10 @@
 #include<iostream>
 using namespace std;
 
+/*This is an abstract class and we can't create object of abstract class because it is a incomplete class,
+also it can contain non pure virtual functions but it should have atleast one PVF , abstract class provides
+the implementation so that derived classes can override functions*/
+
 class Baseclass
 {
     public:
