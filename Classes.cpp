@@ -7,7 +7,7 @@
 using namespace std;
 
 /*Declaring a class*/
-/*We can declare a class inside main function, However it is not a good practice*/
+/*We can declare a class inside main function, However it is not a good practice.*/
 
 class College
 {
