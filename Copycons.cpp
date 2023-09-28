@@ -13,10 +13,10 @@ class CC
     float b;
     public:
     /*Copy Constructor*/
-    CC(CC &Num2)
+    CC(CC &Num1)
     {
-        a=Num2.a;
-        b=Num2.b;
+        a=Num1.a;
+        b=Num1.b;
     }
 
     //Constructor
