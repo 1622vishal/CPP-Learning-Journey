@@ -45,6 +45,9 @@ class Derived1 : public Baseclass1 ,public Baseclass2
     {
         val3=v3;
     }
+
+    /*One more imp. point is that function overriding is present only in Inheritance*/
+    
     void print()  //Overriden the print function but our baseclass function is not lost we can still call it 
     {
         cout<<"Baseclass1 function called"<<endl;
