@@ -12,12 +12,20 @@ using namespace std;
 
 int main()
 {
+    string str = "Hello World";
+    cout<<str<<endl;
     string name;
     cout<<"Enter your name : ";
     cin>>name;        //It ignores white spaces and stops when space is encountered
+    
     cout<<"Your name is "<<name<<endl;
     string namefull;
+
+    // https://www.geeksforgeeks.org/problem-with-getline-after-cin/
+    /*The getline() function in C++ is used to read a string or a line from the input stream. The getline() function does not ignore leading white space characters. So special care should be taken care of about using getline() after cin because cin ignores white space characters and leaves it in the stream as garbage.*/
+
     getline(cin,namefull);     //It continues even after spaces
+    
     cout<<"Your full name is "<<namefull<<endl;
     getline(cin, name , '.');     //(.) is the terminating character here ,the terminating charac is then discarded
     //getline function doesn't read terminating character

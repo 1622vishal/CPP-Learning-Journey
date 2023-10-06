@@ -19,6 +19,7 @@ int main()
     string s10("Vishal" , 3);
     string s8="C++ is the best programming language!!!";
     string s9(s8 , 4 ,9);
+    //string s11 = 'A';  Not allowed because A is a character 
 
     cout<<"Value of s1 is: "<<s1<<endl;
     cout<<"Value of s2 is: "<<s2<<endl;
