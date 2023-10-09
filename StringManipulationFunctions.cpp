@@ -16,6 +16,20 @@ int main()
     cout<<str.size()<<endl;
     //Note:- strlen() is used with char arrays
 
-    
+    //String Relational Operators
+    string str1 = "Coding";
+    string str2 = "Programming";
+    bool result;
+    result = str1==str2;
+    cout<<result<<endl;
+    result = str1>str2;
+    cout<<result<<endl;
+    result = str1<str2;
+    cout<<result<<endl;
+
+    //The above code can be done using compare function
+    cout<<str1.compare(str2)<<endl;    //One advantage of compare function is that it returns -1 in case of smaller string
+    cout<<str1.compare(2 , 3, str2)<<endl;
+
     return 0;
 }
