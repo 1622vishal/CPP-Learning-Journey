@@ -19,6 +19,7 @@ int main()
     //String Relational Operators
     string str1 = "Coding";
     string str2 = "Programming";
+    string str3 = "Coding";
     bool result;
     result = str1==str2;
     cout<<result<<endl;
@@ -29,7 +30,13 @@ int main()
 
     //The above code can be done using compare function
     cout<<str1.compare(str2)<<endl;    //One advantage of compare function is that it returns -1 in case of smaller string
-    cout<<str1.compare(2 , 3, str2)<<endl;
+    cout<<str1.compare(2 , 3, str2)<<endl;       //ogr is less than Coding
+    cout<<str1.compare(str3)<<endl;              //returns 0
 
+    //Concatenating or Appeding two strings
+    cout<<str1 + str2<<endl;
+    cout<<str1.append(str2)<<endl;
+    cout<<str1<<endl;
+    cout<<str1.append(str2 , 2 , 3)<<endl;
     return 0;
 }
