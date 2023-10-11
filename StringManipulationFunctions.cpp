@@ -78,5 +78,9 @@ int main()
     cout<<str2.insert(4, str3)<<endl;
     cout<<str2.insert(4, str3 ,2 ,2)<<endl;          //insert(pos1, str3, pos2, len2)  pos2 and len2 of str3 
     cout<<str3.insert(3, 4, 'C')<<endl;
+
+    //Replacing a string(or part of a string) with another string 
+    cout<<str4.replace(8, 6, "mother")<<endl;
+    cout<<str4.replace(16, 4, str5, 3, 3)<<endl;     //The no. 3, 3 is of string str5
     return 0;
 }
