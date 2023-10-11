@@ -82,5 +82,10 @@ int main()
     //Replacing a string(or part of a string) with another string 
     cout<<str4.replace(8, 6, "mother")<<endl;
     cout<<str4.replace(16, 4, str5, 3, 3)<<endl;     //The no. 3, 3 is of string str5
+
+    //Erasing some part of a string
+    cout<<str4.erase(6, 7)<<endl;
+    str5.clear();
+    cout<<str5<<endl;
     return 0;
 }
