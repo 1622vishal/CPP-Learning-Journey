@@ -61,5 +61,12 @@ int main()
     //Searching backwards
     int index1 = str4.rfind(str5);
     cout<<index1<<endl;
+
+    //Searching for a character in a string
+    cout<<str2.find_first_of("hdr")<<endl;
+    cout<<str2.find_first_of("hdr" , 2)<<endl;
+    cout<<str2.find_first_not_of("hdr")<<endl;
+    cout<<str2.find_last_of("hdr")<<endl;
+    cout<<str2.find_last_not_of("hdr")<<endl;
     return 0;
 }
