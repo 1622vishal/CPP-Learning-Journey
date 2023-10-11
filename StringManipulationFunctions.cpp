@@ -3,45 +3,63 @@
 
 /*Program to demonstrate the functions used with strings*/
 
-#include<iostream>
-#include<string>
-#include<cstring>
+#include <iostream>
+#include <string>
+#include <cstring>
 using namespace std;
 
 int main()
 {
-    //String Length Function
+    // String Length Function
     string str = "Hello";
-    cout<<str.length()<<endl;      
-    cout<<str.size()<<endl;
-    //Note:- strlen() is used with char arrays
+    cout << str.length() << endl;
+    cout << str.size() << endl;
+    // Note:- strlen() is used with char arrays
 
-    //String Relational Operators
+    // String Relational Operators
     string str1 = "Coding";
     string str2 = "Programming";
     string str3 = "Coding";
     bool result;
-    result = str1==str2;
-    cout<<result<<endl;
-    result = str1>str2;
-    cout<<result<<endl;
-    result = str1<str2;
-    cout<<result<<endl;
+    result = str1 == str2;
+    cout << result << endl;
+    result = str1 > str2;
+    cout << result << endl;
+    result = str1 < str2;
+    cout << result << endl;
 
-    //The above code can be done using compare function
-    cout<<str1.compare(str2)<<endl;    //One advantage of compare function is that it returns -1 in case of smaller string
-    cout<<str1.compare(2 , 3, str2)<<endl;       //ogr is less than Coding
-    cout<<str1.compare(str3)<<endl;              //returns 0
+    // The above code can be done using compare function
+    cout << str1.compare(str2) << endl;       // One advantage of compare function is that it returns -1 in case of smaller string
+    cout << str1.compare(2, 3, str2) << endl; // ogr is less than Coding
+    cout << str1.compare(str3) << endl;       // returns 0
 
-    //Concatenating or Appeding two strings
-    cout<<str1 + str2<<endl;
-    cout<<str1.append(str2)<<endl;
-    cout<<str1<<endl;
-    cout<<str1.append(str2 , 2 , 3)<<endl;
+    // Concatenating or Appeding two strings
+    cout << str1 + str2 << endl;
+    cout << str1.append(str2) << endl;
+    cout << str1 << endl;
+    cout << str1.append(str2, 2, 3) << endl;
 
-    //Extracting a substring
-    cout<<str2.substr()<<endl;
-    cout<<str2.substr(3)<<endl;
-    cout<<str2.substr(3,4)<<endl;
+    // Extracting a substring
+    cout << str2.substr() << endl;
+    cout << str2.substr(3) << endl;
+    cout << str2.substr(3, 4) << endl;
+
+    // Using find() function to search a substring
+    string str4 = "This is planet Earth. Saturn is also a planet.Sun is not a planet.";
+    string str5 = "planet";
+    int index = str4.find(str5);
+    cout << index << endl;
+    index = str4.find("planet", 2);
+    cout << index << endl;
+    while (index <= str4.length())
+    {
+        cout << index << " ";
+        index = str4.find(str5, index + 1);
+    }
+    cout<<endl;
+    
+    //Searching backwards
+    int index1 = str4.rfind(str5);
+    cout<<index1<<endl;
     return 0;
 }
