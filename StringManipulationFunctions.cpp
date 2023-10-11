@@ -87,5 +87,14 @@ int main()
     cout<<str4.erase(6, 7)<<endl;
     str5.clear();
     cout<<str5<<endl;
+
+    //Swapping two strings
+    cout<<"String 1:-"<<str1<<endl;
+    cout<<"String 2:-"<<str2<<endl;
+
+    swap(str1 , str2);
+    cout<<"String 1:-"<<str1<<endl;
+    cout<<"String 2:-"<<str2<<endl;
+
     return 0;
 }
