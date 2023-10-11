@@ -38,5 +38,10 @@ int main()
     cout<<str1.append(str2)<<endl;
     cout<<str1<<endl;
     cout<<str1.append(str2 , 2 , 3)<<endl;
+
+    //Extracting a substring
+    cout<<str2.substr()<<endl;
+    cout<<str2.substr(3)<<endl;
+    cout<<str2.substr(3,4)<<endl;
     return 0;
 }
