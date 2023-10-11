@@ -68,5 +68,9 @@ int main()
     cout<<str2.find_first_not_of("hdr")<<endl;
     cout<<str2.find_last_of("hdr")<<endl;
     cout<<str2.find_last_not_of("hdr")<<endl;
+    cout<<str2.find_first_of("xyz")<<endl;
+
+    //Accessing characters
+    cout<<str2.at(4)<<endl;
     return 0;
 }
