@@ -73,5 +73,10 @@ int main()
     //Accessing characters
     cout<<str2.at(4)<<endl;         //It checks out of range
     cout<<str[4]<<endl;    //easy way
+
+    //Inserting in a string
+    cout<<str2.insert(4, str3)<<endl;
+    cout<<str2.insert(4, str3 ,2 ,2)<<endl;          //insert(pos1, str3, pos2, len2)  pos2 and len2 of str3 
+    cout<<str3.insert(3, 4, 'C')<<endl;
     return 0;
 }
