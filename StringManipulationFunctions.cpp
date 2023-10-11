@@ -71,6 +71,7 @@ int main()
     cout<<str2.find_first_of("xyz")<<endl;
 
     //Accessing characters
-    cout<<str2.at(4)<<endl;
+    cout<<str2.at(4)<<endl;         //It checks out of range
+    cout<<str[4]<<endl;    //easy way
     return 0;
 }
