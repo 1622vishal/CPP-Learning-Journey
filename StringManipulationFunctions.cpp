@@ -3,6 +3,7 @@
 
 /*Program to demonstrate the functions used with strings*/
 
+#include<bits/stdc++.h>
 #include <iostream>
 #include <string>
 #include <cstring>
@@ -96,5 +97,9 @@ int main()
     cout<<"String 1:-"<<str1<<endl;
     cout<<"String 2:-"<<str2<<endl;
 
+    //Reversing a string
+    reverse(str2.begin() , str2.end());    //reverse is not a class member function
+    cout<<str2<<endl;
+    
     return 0;
 }
