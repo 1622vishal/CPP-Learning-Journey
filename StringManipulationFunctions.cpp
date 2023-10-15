@@ -100,6 +100,15 @@ int main()
     //Reversing a string
     reverse(str2.begin() , str2.end());    //reverse is not a class member function
     cout<<str2<<endl;
-    
+
+    //Converting a number to string
+    int num = 345;
+    string str6 = to_string(num);
+    cout<<"String:- "<<str6.append("1")<<endl;
+
+    //Converting a string to integer
+    int num1 = stoi(str6);
+    cout<<"Integer:- "<<num1<<endl;
+
     return 0;
 }
