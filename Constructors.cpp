@@ -55,6 +55,7 @@ int main()
 {
     Animals dog (4,16);
     Animals cat (5);
+    // Animals cow = Animals(5,7);     We can also do this to call constructor, this is same as above line
 
     // Animals cow;    Since we defined two comstructors but not default constructor so this statement shows eror
     //Also if we define a constructor then compiler will not create a default constructor 
